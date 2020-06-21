@@ -5,6 +5,7 @@ export const Transaction = ({transaction})=> {
 
     const sign = transaction.transactionAmount > 0 ? '+' : '-';
     const transactionType = transaction.transactionAmount > 0 ? 'plus' : 'minus';
+    console.log(transactionType)
     return(
         <li className="plus">
             {transaction.description}
