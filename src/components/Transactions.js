@@ -4,8 +4,9 @@ export const Transaction = ({transaction})=> {
     const {delTransaction} = useContext(GlobalContext)
 
     const sign = transaction.transactionAmount > 0 ? '+' : '-';
+    // eslint-disable-next-line
     const transactionType = transaction.transactionAmount > 0 ? 'plus' : 'minus';
-    console.log(transactionType)
+  
     return(
         <li className="plus">
             {transaction.description}
